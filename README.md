@@ -25,6 +25,7 @@ Example how to use Flatbuffer with RocksDB. The program write/read key values. K
 | 100000     |   2892.830  |    101.100  |     33.578   |   432.402     |     13M |
 | 1000000    |  29171.700  |     98.700  |     98.348   |   552.551     |     115M |
 
-References
-`psrecord --include-children --log $prog_name.log --interval 0.5 --plot plot-$prog_name.png $argv`
-https://unix.stackexchange.com/questions/554/how-to-monitor-cpu-memory-usage-of-a-single-process
+# References
+
+- `psrecord --include-children --log $prog_name.log --interval 0.5 --plot plot-$prog_name.png $argv`
+- https://unix.stackexchange.com/questions/554/how-to-monitor-cpu-memory-usage-of-a-single-process
