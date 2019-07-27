@@ -14,6 +14,7 @@ Example how to use Flatbuffer with RocksDB. The program write/read key values. K
 - GeForce RTX 2080 Max-Q 8 GB GDDR6
 - Ubuntu 16.04 LTS 64-bit
 
+Resource sampling is at 0.5 seconds, so anything faster than 0.5s shows up as 0% CPU.
 
 | K-V Objects|   Time (ms) |    CPU (%)  |   Real (MB)  | Virtual (MB)  | Disk Size |
 | -----------|-------------|-------------|--------------|---------------|------------- |
