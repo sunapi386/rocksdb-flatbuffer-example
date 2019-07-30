@@ -26,6 +26,16 @@ Resource sampling is at 0.5 seconds, so anything faster than 0.5s shows up as 0%
 | 100000     |   2892.830  |    101.100  |     33.578   |   432.402     |     13M |
 | 1000000    |  29171.700  |     98.700  |     98.348   |   552.551     |     115M |
 
+Note:
+- Filesystem only test uncompressed is 99Mb. 
+- 2nd run, for the 1M test, db size increases from 115M to 178M. 
+- 3rd run increases to 291M.
+- 4th run shrinks to 229M.
+- 5th run shrinks to 178M.
+- 6th run increases to 291M.
+- 7th run shrinks 229M.
+- All runs share similar execution times (ms), around 28-29s.
+
 # References
 
 - `psrecord --include-children --log $prog_name.log --interval 0.5 --plot plot-$prog_name.png $argv`
