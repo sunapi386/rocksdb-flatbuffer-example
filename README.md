@@ -2,8 +2,18 @@ Example how to use Flatbuffer with RocksDB. The program write/read key values. K
 
 # Install
 
-- Install rocksdb, flatbuffer. 
+- Install rocksdb, flatbuffer.
 - `flatc --cpp game.fbs` to get the `game_generated.h`.
+
+# Build & Run
+
+```
+mkdir build
+cd build
+cmake ..
+make
+./rocksdb-main
+```
 
 # Test Setup
 
@@ -27,8 +37,8 @@ Resource sampling is at 0.5 seconds, so anything faster than 0.5s shows up as 0%
 | 1000000    |  29171.700  |     98.700  |     98.348   |   552.551     |     115M |
 
 Note:
-- Filesystem only test uncompressed is 99Mb. 
-- 2nd run, for the 1M test, db size increases from 115M to 178M. 
+- Filesystem only test uncompressed is 99Mb.
+- 2nd run, for the 1M test, db size increases from 115M to 178M.
 - 3rd run increases to 291M.
 - 4th run shrinks to 229M.
 - 5th run shrinks to 178M.
